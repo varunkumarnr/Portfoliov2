@@ -1,13 +1,225 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  padding: 0;
+  font-weight: 400;
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,
+html {
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #6a6f7c;
+  --hover-color: #d0d7e3;
+  --main-border: 1px solid #191c28;
+  --main-bg: #191c28;
+  --base-bg: #1e2331;
+  --light-bg: #242a3b;
+  --accent: #1e2331;
+  --accent-light: #242a3b;
+  --scpc: var(--hover-color);
+  --color-1: var(--hover-color);
+}
+
+::selection {
+  background-color: var(--light-bg);
+  color: white;
+}
+
+#portfolio-design {
+  display: none;
+}
+
+/*Header*/
+.header {
+  background: radial-gradient(var(--light-bg) 1px, transparent 0),
+    radial-gradient(var(--light-bg) 1px, transparent 0),
+    linear-gradient(180deg, var(--light-bg) 0%, var(--main-bg) 100%);
+  background-size: 40px 40px, 40px 40px, 100%, 100%;
+  background-position: 0 0, 20px 20px, center;
+
+  background-color: var(--accent);
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0),
+    radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10%;
+  display: flex;
+  z-index: 0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.make-navbar-bg {
+  background-color: var(--base-bg);
+  -webkit-box-shadow: 0 20px 25px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 25px -6px rgba(0, 0, 0, 0.3);
+}
+
+.deform {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+
+.deform-one {
+  background: linear-gradient(68deg, var(--accent-light) 2%, transparent 60%);
+  width: 100%;
+  height: 60%;
+  display: flex;
+  border-bottom-left-radius: 12%;
+  transform: rotate(-22deg) translateY(-100%);
+  position: relative;
+  margin-bottom: 20%;
+  right: -20%;
+  margin: 0;
+  padding: 0;
+}
+
+.deform-two {
+  background: linear-gradient(150deg, transparent 0%, var(--accent-light) 100%);
+  width: 100%;
+  height: 40%;
+  transform: rotate(-42deg) translate(40%, 50%) scale(1.8);
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.header a {
+  display: inline;
+  text-decoration: none;
+}
+.header button {
+  outline: none;
+}
+.navbar a {
+  font-weight: 400;
+  color: white;
+  margin: 10px 10px;
+}
+
+/* profile */
+
+p {
+  color: white;
+}
+.name {
+  font-size: 30px;
+  font-weight: 700;
+}
+.profession {
+  font-size: 20px;
+  font-weight: 300;
+}
+#spin {
+  color: white;
+  font-size: 16px;
+}
+
+#spin:after {
+  content: "";
+  animation: spin 20s linear infinite;
+}
+@keyframes spin {
+  0% {
+    content: "Bonjour,";
+  }
+
+  10% {
+    content: "Hi,";
+  }
+
+  20% {
+    content: " नमस्ते ,";
+  }
+
+  30% {
+    content: "Hola,";
+  }
+
+  40% {
+    content: "你好,";
+  }
+
+  50% {
+    content: "Здравей,";
+  }
+
+  60% {
+    content: "Привет,";
+  }
+
+  70% {
+    content: "Ciao,";
+  }
+
+  80% {
+    content: "こんにちは,";
+  }
+
+  90% {
+    content: "Oi,";
+  }
+  100% {
+    content: "سلام";
+  }
+}
+
+.socials {
+  width: 55%;
+  height: auto;
+  margin: 0 auto;
+  background: var(--main-bg);
+  border-radius: 5px;
+  align-items: center;
+  margin-bottom: 1rem;
+  z-index: 2;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 80px 100px -24px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 80px 100px -24px rgba(0, 0, 0, 0.45);
+}
+
+.socials::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 40px;
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  background: #ff5f56;
+  box-shadow: 16px 0px 0px #ffbd2e, 32px 0px 0px #27c93f;
+}
+
+.socials i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.socials .icon-social {
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.socials .icon-social:hover {
+  background-color: rgba(255, 255, 255, 0.05);
 }
