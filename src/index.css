@@ -11,6 +11,9 @@ html {
   overflow-x: hidden !important;
   box-sizing: border-box;
 }
+ul {
+  list-style: none;
+}
 
 :root {
   --main-color: #6a6f7c;
@@ -231,49 +234,6 @@ p {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-@media (max-width: 576px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  .toast {
-    left: 0px;
-    bottom: 0px;
-    margin: 5px;
-  }
-
-  .navbar li {
-    margin-top: 10px;
-  }
-
-  .name {
-    font-size: 15px;
-    font-weight: 700;
-  }
-
-  .profession {
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  /*Socials*/
-  .socials {
-    width: 90%;
-  }
-
-  /*header*/
-  .deform-one {
-    transform: rotate(-22deg) translateY(-80%);
-    margin-bottom: -20%;
-    right: -40%;
-  }
-
-  .deform-two {
-    width: 100%;
-    height: 40%;
-    transform: rotate(-70deg) translate(40%, -50%) scale(1.8);
-  }
-}
-
 .about {
   background-color: var(--main-bg);
   height: auto;
@@ -341,4 +301,75 @@ p {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.skills {
+  background-color: var(--light-bg);
+  height: auto;
+  width: 100%;
+  z-index: 1;
+}
+.skills h3 {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: calc(100%-50%);
+}
+.skills li {
+  text-align: justify;
+  font-weight: 200;
+  font-size: 16px;
+}
+.skills-cat-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .toast {
+    left: 0px;
+    bottom: 0px;
+    margin: 5px;
+  }
+
+  .navbar li {
+    margin-top: 10px;
+  }
+
+  .name {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .profession {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  /*Socials*/
+  .socials {
+    width: 90%;
+  }
+
+  /*header*/
+  .deform-one {
+    transform: rotate(-22deg) translateY(-80%);
+    margin-bottom: -20%;
+    right: -40%;
+  }
+
+  .deform-two {
+    width: 100%;
+    height: 40%;
+    transform: rotate(-70deg) translate(40%, -50%) scale(1.8);
+  }
+}
+@media (min-width: 992px) {
+  .skills {
+    padding: 100px 0px 100px 0px;
+  }
 }
