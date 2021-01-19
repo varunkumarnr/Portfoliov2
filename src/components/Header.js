@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className='container-fluid header'>
       <div className='row'>
-        <div className='col-12 deform'>
+        <div className='deform'>
           <div className='col-12 deform-one'></div>
           <div className='col-12 deform-two'></div>
         </div>
@@ -44,7 +44,7 @@ function Header() {
                 </li>
                 <li className='nav-item'>
                   <a className='nav-link' href='#skills'>
-                    ❤ Skills
+                    Skills
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -55,7 +55,7 @@ function Header() {
 
                 <li className='nav-item'>
                   <a className='nav-link' href='#porfolio'>
-                    projects ↗
+                    projects
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -69,7 +69,7 @@ function Header() {
                 </li>
                 <li className='nav-item'>
                   <a className='nav-link' href='#hireme'>
-                    Hire me ↻
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -145,7 +145,7 @@ function Header() {
                       <i className='fa fa-linkedin mr-2'></i>
                     </a>
                   </div>
-                  <div className='col-4 col-lg-2 mt-5 mb-lg-3'>
+                  {/* <div className='col-4 col-lg-2 mt-5 mb-lg-3'>
                     <a
                       target='_blank'
                       rel='noopener noreferrer'
@@ -154,9 +154,9 @@ function Header() {
                     >
                       <i className='fab fa-hackerrank mr-2'></i>
                     </a>
-                  </div>
+                  </div> */}
 
-                  <div className='col-4 col-lg-2 mt-5 mb-lg-3'>
+                  <div className='col-4 col-lg-2 mt-5 mb-lg-3 insta'>
                     <a
                       target='_blank'
                       rel='noopener noreferrer'
