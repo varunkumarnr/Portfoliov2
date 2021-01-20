@@ -20,7 +20,7 @@ function Skills() {
             <li className='skills-cat-item'>CSS</li>
             <li className='skills-cat-item'>Python</li>
             <li className='skills-cat-item'>SQL</li>
-            <li className='skills-cat-item'>PHP</li>
+            <li className='skills-cat-item'>Java</li>
           </ul>
         </div>
         <div className='col-6 col-md-6 col-lg-2 skills-cat my-lg-5'>
@@ -33,7 +33,7 @@ function Skills() {
             <li className='skills-cat-item'>JQuery</li>
             <li className='skills-cat-item'>three.js</li>
             <li className='skills-cat-item'>redux</li>
-            <li className='skills-cat-item'>---</li>
+            <li className='skills-cat-item'>Styled components</li>
           </ul>
         </div>
         <div className='col-6 col-md-6 col-lg-2 skills-cat my-lg-5'>

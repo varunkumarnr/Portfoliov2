@@ -325,7 +325,51 @@ p {
   font-weight: 500;
   font-size: 16px;
 }
+.resume {
+  background-color: var(--light-bg);
+  height: auto;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 30px;
+}
 
+.arrow-link {
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  color: white;
+  display: inline-block;
+}
+.arrow-link:hover {
+  text-decoration: none;
+  color: white;
+}
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
+}
+
+.arrow-link:after {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  bottom: 2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  content: "";
+  background: url(./img/arrow.png) no-repeat center;
+  background-size: 100%;
+
+  display: inline-block;
+  vertical-align: middle;
+}
+.arrow-link:hover {
+  transform: scaleX(1.1);
+}
 @media (max-width: 576px) {
   body {
     overflow-x: hidden !important;
@@ -370,6 +414,6 @@ p {
 }
 @media (min-width: 992px) {
   .skills {
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px 50px 0px;
   }
 }
