@@ -48,13 +48,13 @@ function Header() {
                   </a>
                 </li>
                 <li className='nav-item'>
-                  <a className='nav-link' href='#resume'>
+                  <a className='nav-link' href='#skills'>
                     Resume
                   </a>
                 </li>
 
                 <li className='nav-item'>
-                  <a className='nav-link' href='#porfolio'>
+                  <a className='nav-link' href='#projects'>
                     Projects
                   </a>
                 </li>

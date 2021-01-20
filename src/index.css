@@ -370,6 +370,86 @@ a {
 .arrow-link:hover {
   transform: scaleX(1.1);
 }
+.projects {
+  background-color: var(--main-bg);
+}
+.projects .card {
+  background-color: var(--light-bg);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.projects .card-title {
+  font-weight: 400;
+}
+
+.projects .card-text {
+  font-weight: 200;
+  text-align: justify;
+}
+
+.projects:before {
+  display: flex;
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 12rem;
+  background-image: radial-gradient(var(--hover-color) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.projects h3 {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 50px;
+}
+.projects .card-title a,
+.projects span {
+  font-weight: 400;
+  border-radius: 40px;
+  text-decoration: none;
+  background-color: var(--main-bg);
+}
+
+.projects a {
+  font-size: 14px;
+  margin-left: 10px;
+  color: seagreen;
+  padding: 5px 20px 5px 20px;
+}
+
+.projects span {
+  font-size: 12px;
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px 15px 5px 15px;
+}
+.projects .portfolio-web,
+.projects .portfolio-design {
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 30px 10px 30px;
+  font-weight: 400;
+  border-radius: 40px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projects .make-green-bg {
+  background-color: rgba(80, 165, 144, 0.2);
+}
+
+.projects .make-gray-bg {
+  background-color: var(--light-bg);
+}
+
+.portfolio-design-block {
+  display: none;
+}
 @media (max-width: 576px) {
   body {
     overflow-x: hidden !important;
@@ -417,3 +497,11 @@ a {
     padding: 100px 0px 50px 0px;
   }
 }
+/* @media (max-width: 768px) {
+  .projects .cards {
+    padding: 0;
+  }
+  .projects .cards-body {
+    margin-top: 10px;
+  }
+} */
