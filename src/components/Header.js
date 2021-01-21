@@ -12,7 +12,7 @@ function Header() {
         </div>
         <div className='col-12 mb-5'>
           <nav id='navbar_top' className='navbar navbar-expand-lg'>
-            <a className='navbar-brand' href='/'>
+            <a className='navbar-brand' href='#main'>
               varun
             </a>
             <button
@@ -76,7 +76,7 @@ function Header() {
             </div>
           </nav>
         </div>
-        <div className='col-12 text-center mt-4'>
+        <div className='col-12 text-center mt-4' id='main'>
           <div className='text-center'>
             <img
               src={me}
