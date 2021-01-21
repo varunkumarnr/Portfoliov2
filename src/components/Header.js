@@ -12,7 +12,7 @@ function Header() {
         </div>
         <div className='col-12 mb-5'>
           <nav id='navbar_top' className='navbar navbar-expand-lg'>
-            <a className='navbar-brand' href='github.com'>
+            <a className='navbar-brand' href='/'>
               varun
             </a>
             <button
