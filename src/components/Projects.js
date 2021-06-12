@@ -1,6 +1,5 @@
 import React from "react";
 import codeBuddy from "../img/codeBuddy.jpg";
-import YourResume from "../img/yourResume.jpg";
 import Movie from "../img/download.jpg";
 import Spotify from "../img/Spotify.jpg";
 import Pegion from "../img/pegion.jpg";
